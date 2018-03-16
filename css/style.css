@@ -1,0 +1,23 @@
+/* Блок Боди  Block body */
+.body {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1024px;
+    flex-direction: column;
+}
+
+/* Блок Хедер Block Header */
+.header {
+    display: flex;
+    flex-basis: 100%;
+}
+
+/* Блок контейнер Block container */
+
+.container {
+    display: flex;
+}
+
+/* Блок логотип Block logotype */
+
