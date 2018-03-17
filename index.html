@@ -15,25 +15,32 @@
         <div class="container">
             <div class="menu"></div>
             <div class="logotype"></div>
-            
+
         </div>
         
     </header>
     <main class="main">
-        <section class="container">
-            <nav class="navigation">navigation</nav>
-            <div class="caption">caption</div>
+        <section class="container container_column">
+            <nav class="navigation">
+                <ul>
+                    <li class="navigation_item">Главная</li>
+                    <li lass="navigation_item">Каталог</li>
+                    <li lass="navigation_item">Серьги</li>
+                    <li lass="navigation_item">Серьги с бриллиантами</li>
+                </ul>
+            </nav>
+            <div class="caption">Золотые серьги с бриллиантами</div>
         </section>
         <section class="container">
             <div class="filter">filter</div>
-            <div class="sorting"></div>
+            <div class="sorting">сортировка</div>
         </section>
         <section class="container">
             <div class="shop-card">item 1</div>
 
         </section>
-        <section class="container">
-            <div class="container__button">Показать все</div>
+        <section class="container container_column">
+            <button class="container__button">Показать все</button>
             <div class="paginator">paginator</div>
         </section>
     </main>
@@ -42,7 +49,19 @@
             <div class="container__item">Покупателям</div>
             <div class="container__item">О компании</div>
             <div class="container__item">Контакты</div>
-            <div class="subscribe-form">Подписаться</div>
+            <form class="subscribe-form">
+                Подписаться на рассылку
+            <label class="label " for="subscribe-form_email">
+            E-mail:
+            <input class="input" type="email" name="subscribe-form_email" id="subscribe-form_email">
+            </label>
+            <label class="label" for="subscribe-form-checkbox">
+            <input class="input" type="checkbox" name="subscribe-form_email_checkbox" id="subscribe-form_email_checkbox">
+            Я согласен с <a href="">условиями оферты</a>
+            </label>
+            <input class="input_button" type="submit" value="Подписаться" class="subscribe-form_submit">
+            
+            </form>
         </section>
     </footer>
     </body>

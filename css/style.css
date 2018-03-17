@@ -19,5 +19,14 @@
     display: flex;
 }
 
+.container_column {
+    flex-direction: column;
+}
+
 /* Блок логотип Block logotype */
 
+.logotype {
+    background-image: url(../img/logo.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
