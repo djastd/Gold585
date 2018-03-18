@@ -8,6 +8,11 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="" href="" type="image/png">
         <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/filter__block-toggle.js"></script>
+        <script src="js/sorting__block-toggle.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
 
         
     </head>
@@ -21,7 +26,7 @@
             </div>       
     </header>
     <main class="main">
-        <section class="container container_column container_align-left">
+        <div class="container container_column container_align-left">
             <nav class="navigation">
                 <ul>
                     <li class="navigation__item">
@@ -41,65 +46,83 @@
                     </li>
                 </ul>
             </nav>
-            <div class="caption">Золотые серьги с бриллиантами</div>
-        </section>
-        <section class="container">
-            <div class="filter">Filter
-                <div class="filter-block">Price
-                <label class="filter-block__label" for="filter-price-1">Цена 1
+            <h1 class="caption">Золотые серьги с бриллиантами</h1>
+        </div>
+        <div class="container container_modal-theme">
+            <div class="filter">
+                <h2 class="filter__caption">Filter
+                        <i class="caret_dowm"></i>
+                </h2>
+                
+                <div class="filter-block"><h3 class="filter-block__caption">Price<i class="circle_plus"></i></h3> 
+                <label class="filter-block__label" for="filter-price-1">
                     <input class="filter-block__input" type="checkbox" name="filter-price-1" id="filter-price-1">
+                    Цена 1
                 </label>
-                <label class="filter-block__label" for="filter-price-2">Цена 2
+                <label class="filter-block__label" for="filter-price-2">
                     <input class="filter-block__input" type="checkbox" name="filter-price-2" id="filter-price-2">
+                    Цена 2
                 </label>
-                <label class="filter-block__label" for="filter-price-3">Цена 3
+                <label class="filter-block__label" for="filter-price-3">
                     <input class="filter-block__input" type="checkbox" name="filter-price-3" id="filter-price-">
+                    Цена 3
                 </label>
             </div>
-            <div class="filter-block">Collections
-                <label class="filter-block__label" for="filter-collection-1">Коллекция 1
+            <div class="filter-block"><h3 class="filter-block__caption">Collections<i class="circle_plus"></i></h3>
+                <label class="filter-block__label" for="filter-collection-1">
                     <input class="filter-block__input" type="checkbox" name="filter-collection-1" id="filter-collection-1">
+                    Коллекция 1
                 </label>
-                <label class="filter-block__label" for="filter-collection-2">Коллекция 2
+                <label class="filter-block__label" for="filter-collection-2">
                         <input class="filter-block__input" type="checkbox" name="filter-collection-2" id="filter-collection-2">
+                        Коллекция 2
                 </label>
-                <label class="filter-block__label" for="filter-collection-3">Коллекция 3
+                <label class="filter-block__label" for="filter-collection-3">
                     <input class="filter-block__input" type="checkbox" name="filter-collection-3" id="filter-collection-3">
+                    Коллекция 3
                 </label>
             </div>
-            <div class="filter-block">Material
-                <label class="filter-block__label" for="filter-material-1">Материал 1
+            <div class="filter-block"><h3 class="filter-block__caption">Material<i class="circle_plus"></i></h3>
+                <label class="filter-block__label" for="filter-material-1">
                     <input class="filter-block__input" type="checkbox" name="filter-material-1" id="filter-material-1">
+                    Материал 1
                 </label>
-                <label class="filter-block__label" for="filter-material-1">Материал 2
+                <label class="filter-block__label" for="filter-material-1">
                     <input class="filter-block__input" type="checkbox" name="filter-material-2" id="filter-material-2">
+                    Материал 2
                 </label>
-                <label class="filter-block__label" for="filter">Материал 3
+                <label class="filter-block__label" for="filter">
                     <input class="filter-block__input" type="checkbox" name="filter-material-3" id="filter-material-3">
+                    Материал 3
                 </label>
             </div>
             </div>
-            <div class="sorting">Sort By
-                <div class="sorting-block">
-                <label class="sorting-block__label" for="sorting-metod-by-price-up">По увеличению цены
+            <div class="sorting">
+                    <h2 class="sorting__caption">Sort By
+                    <i class="caret_dowm"></i>
+                    </h2>
+                <div class="sorting-block"><h3 class="sorting-block__caption">По цене<i class="circle_plus"></i></h3>
+                <label class="sorting-block__label" for="sorting-metod-by-price-up">
                     <input class="sorting-block__input" type="checkbox" name="sorting-metod-by-price-up" id="sorting-metod-by-price-up">
+                    По увеличению цены
                 </label>
-                <label class="sorting-block__label" for="sorting-metod-by-price-down">По уменьшению цены
+                <label class="sorting-block__label" for="sorting-metod-by-price-down">
                     <input class="sorting-block__input" type="checkbox" name="sorting-metod-by-price-down" id="sorting-metod-by-price-down">
+                    По уменьшению цены
                 </label>
                 </div>
 
             </div>
-        </section>
-        <section class="container">
+        </div>
+        <div class="container">
             <div class="shop-card">
                 <div class="shop-card_sale-icon"></div>
                 <div class="shop-card_price"></div>
                 <button class="shop-card_buy-batton"></button>
             </div>
 
-        </section>
-        <section class="container container_column">
+        </div>
+        <div class="container container_column">
             <button class="container__button">Показать все</button>
             <div class="paginator">
                 <ul class="paginator-container">
@@ -117,10 +140,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
-        <section class="container">
+        <div class="container">
             <div class="container__item">Покупателям</div>
             <div class="container__item">О компании</div>
             <div class="container__item">Контакты</div>
@@ -137,7 +160,7 @@
             <input class="input_button" type="submit" value="Подписаться" class="subscribe-form_submit">
             
             </form>
-        </section>
+        </div>
     </footer>
     </body>
 </html>

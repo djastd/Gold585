@@ -3,12 +3,18 @@
     display: flex;
     margin: 0px;
     padding: 0px;
-    max-width: 1024px;
     flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 1em;
-    min-width: 300px;
+    font-family: Forum;
+}
+
+h1,h2,h3 {
+    font-family: 1em;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
 }
 
 /* Блок Хедер Block Header */
@@ -80,6 +86,7 @@ bottom: -4px;
 
 .main {
     margin-top: 50px;
+    flex-basis: 100%;
 }
 
 /* Блок контейнер Block container */
@@ -98,11 +105,16 @@ bottom: -4px;
     justify-content: flex-start;
 }
 
+.container_modal-theme {
+    background-color: gray;
+}
+
 
 /* Блок Навигации Block Navigation */
 
 .navigation {
     flex-basis: 70%;
+    margin-bottom: 20px;
 }
 
 .navigation ul {
@@ -110,6 +122,7 @@ bottom: -4px;
     list-style: none;
     margin: 0px;
     padding: 0px;
+    align-items: center;
 }
 
 .navigation__item a {
@@ -117,16 +130,147 @@ bottom: -4px;
     display: inline-block;
     text-decoration: none;
     color: #000000;
+    font-size: 1.5em;
 }
 
 .navigation__icon-angle-right {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     display: inline-block;
     background-image: url(../img/icon/angle-right.svg);
     background-repeat: no-repeat;
 }
 
-.navigation__item:hover {
-color: 
+.navigation__item a:hover {
+color: orange;
 }
+
+.navigation__item a:last-child {
+    color: orange;
+}
+
+/* Блок Загловок Block Caption */
+
+.caption {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Блок Фильтр Block Filter */
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    background-color: lightgray;  
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.filter__caption {
+    padding-left: 5px;
+    font-size: 1.5em;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    width: 95%;
+    background-color: #ffffff;
+ 
+}
+
+.filter-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.filter-block label {
+    display: none;
+}
+
+.sorting {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+
+.sorting__caption {
+    padding-left: 5px;
+    font-size: 1.5em;
+    border: 2px solid lightgray;
+    width: 95%;
+    background-color: #ffffff;
+    margin-left: 8px;
+}
+
+.sorting-block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 1.2em;
+ 
+}
+
+.sorting-block label {
+    display: none;
+}
+
+/* Иконки Icons */
+
+.icon-plus {
+    background-image: url(../img/icon/plus.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.caret_dowm {
+        background-image: url(../img/icon/caret-down.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+}
+
+.circle_plus {
+    background-image: url(../img/icon/plus-circle.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+
+.circle_minus {
+    background-image: url(../img/icon/minus-circle.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+}
+
+/* Шрифты Fonts */
+
+
+@font-face {
+    font-family: "Forum";  
+    src: url(../fonts/Forum.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+    font-size: 8pt;
+    }
