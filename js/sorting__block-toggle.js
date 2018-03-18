@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 
   function sortingblocktoggle(){
-    $('.sorting-block__label').not($(this).nextAll()).slideUp(500);
-      $(this).nextAll().slideToggle(500);
-  }
+    $(this).nextAll().slideToggle(500);
+    $(this).children('i').toggleClass('circle_plus').toggleClass('circle_minus');
+  
+    }

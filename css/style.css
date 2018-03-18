@@ -106,7 +106,8 @@ bottom: -4px;
 }
 
 .container_modal-theme {
-    background-color: gray;
+ border: 2px solid lightgray;
+ flex-wrap: wrap;
 }
 
 
@@ -161,18 +162,22 @@ color: orange;
 .filter {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
-    background-color: lightgray;  
-    border-left: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+    flex-basis: 50%; 
+}
+
+.filter__icon {
+    width: 42px;
+    height: 42px;
+    background-image: url(../img/icon/filter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .filter__caption {
     padding-left: 5px;
     font-size: 1.5em;
-    border-top: 2px solid lightgray;
+    border-right: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
-    width: 95%;
     background-color: #ffffff;
  
 }
@@ -196,18 +201,15 @@ color: orange;
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
-    border-right: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
+    background-color: #ffffff;
 }
 
 .sorting__caption {
     padding-left: 5px;
     font-size: 1.5em;
-    border: 2px solid lightgray;
-    width: 95%;
+    border-left: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
     background-color: #ffffff;
-    margin-left: 8px;
 }
 
 .sorting-block {
@@ -244,6 +246,15 @@ color: orange;
         width: 20px;
         height: 20px;
         margin-left: 20px;
+}
+
+.icon_minus {
+    background-image: url(../img/icon/minus.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
 }
 
 .circle_plus {
