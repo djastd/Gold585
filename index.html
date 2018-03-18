@@ -12,7 +12,7 @@
         <script src="js/sorting__block-toggle.js"></script>
         <script src="js/filtertoggle.js"></script>
         <script src="js/sortingtoggle.js"></script>
-        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/modalwindowToggle.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -25,7 +25,8 @@
                 </a></div>
             <div class="header__logotype"><a href=""></a></div>
             <div class="header__icon-phone"><a href="tel:88005555585"></a>
-            </div>       
+            </div>
+            <i class="header__icon-filter-cross"></i>     
     </header>
     <main class="main">
         <div class="container container_column container_align-left">
@@ -51,7 +52,7 @@
             <h1 class="caption">Золотые серьги с бриллиантами</h1>
             <i class="filter__icon"></i>
         </div>
-        <div class="container container_modal-theme">
+        <div id="filter"  class="container container_modal-theme container_disabled">
           
             <div class="filter">
                 <h2 class="filter__caption">FILTER
@@ -117,7 +118,7 @@
                 </div>
 
             </div>
-            <button class="filter__button">Применить фильтр</button>
+            <button class="filter__button">ПРИМЕНИТЬ ФИЛЬТРЫ</button>
         </div>
         <div class="container">
             <div class="shop-card">

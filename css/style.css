@@ -82,6 +82,19 @@ bottom: -4px;
     margin-right: 20px;
 }
 
+.header__icon-filter-cross {
+    background-image: url(../img/icon/cross.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    display: none;
+
+}
+
 /* Блок Мэйн Block Main */
 
 .main {
@@ -102,12 +115,16 @@ bottom: -4px;
 }
 
 .container_align-left {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 .container_modal-theme {
  border: 2px solid lightgray;
  flex-wrap: wrap;
+}
+
+.container_disabled {
+    display: none;
 }
 
 
@@ -166,8 +183,8 @@ color: orange;
 }
 
 .filter__icon {
-    width: 42px;
-    height: 42px;
+    width: 25px;
+    height: 25px;
     background-image: url(../img/icon/filter.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -227,6 +244,17 @@ color: orange;
 
 .sorting-block label {
     display: none;
+}
+
+.filter__button {
+    flex-basis: 99%;
+    margin: auto;
+    height: 39px;
+    text-align: center;
+    background-image: none;
+    background-color: lightgray;
+    border: none;
+    letter-spacing: 2px;
 }
 
 /* Иконки Icons */
