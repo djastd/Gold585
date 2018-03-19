@@ -129,8 +129,8 @@ bottom: -4px;
  background-color: #ffffff;
  overflow-y: scroll;
  z-index: 1000;
-}
 
+}
 .container_disabled {
     display: none;
 }
