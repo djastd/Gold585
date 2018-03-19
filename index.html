@@ -14,7 +14,7 @@
         <script src="js/sortingtoggle.js"></script>
         <script src="js/modalwindowToggle.js"></script>
         <script src="js/catalogShowNextItem.js"></script>
-     <!--   <script src="js/HideContainerButton.js"></script>-->
+        <script src="js/HideContainerButton.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -36,15 +36,15 @@
                 <ul>
                     <li class="navigation__item">
                         <a href="">Главная</a>
-                        <i class="navigation__icon-angle-right"></i>
+                       
                     </li>
                     <li class="navigation__item"> 
                         <a href="">Каталог</a>
-                        <i class="navigation__icon-angle-right"></i>
+                       
                     </li>
                     <li class="navigation__item">
                         <a href="">Серьги</a>
-                        <i class="navigation__icon-angle-right"></i>
+                        
                     </li>
                     <li class="navigation__item">
                         <a href="">Серьги с бриллиантами</a>
@@ -161,7 +161,6 @@
                     <div class="catalog-item__price">18750 &#8381;</div>
                     <button class="catalog-item__buy-batton"></button>
                 </div>
-
              
                     <div class="catalog-item catalog-item_7">
                         <div class="catalog-item__sale-icon">30%</div>
@@ -243,25 +242,32 @@
         <div class="container container_column">
             <button class="container__button">Показать все</button>
             <div class="paginator">
+               <button class="paginator__button paginator__button_prev"><a href=" "></a></button>
+               <div class="paginator__item"><a href=" ">1</a></div>
+               <div class="paginator__item"><a href=" ">...</a></div>
+               <div class="paginator__item paginator__item_active"><a href=" ">5</a></div>
+               <div class="paginator__item">из</div>
+               <div class="paginator__item"><a href=" ">N</a></div>
+               <button class="paginator__button paginator__button_next"><a href=" "></a></button>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="container__item">Покупателям</div>
-            <div class="container__item">О компании</div>
-            <div class="container__item">Контакты</div>
+        <div class="container container_column">
+            <div class="container__item container__item_footer-theme"><a href=" ">Покупателям</a></div>
+            <div class="container__item container__item_footer-theme"><a href=" ">О компании</a></div>
+            <div class="container__item container__item_footer-theme"><a href=" ">Контакты</a></div>
             <form class="subscribe-form">
                 Подписаться на рассылку
             <label class="subscribe-form__label " for="subscribe-form_email">
-            E-mail:
+            E-mail<br>
             <input class="subscribe-form__input" type="email" name="subscribe-form_email" id="subscribe-form_email">
             </label>
             <label class="subscribe-form__label" for="subscribe-form-checkbox">
-            <input class="subscribe-form__input" type="checkbox" name="subscribe-form_email_checkbox" id="subscribe-form_email_checkbox">
-            Я согласен с <a href="">условиями оферты</a>
+            <input class="subscribe-form__input" type="checkbox" name="subscribe-form_email_checkbox" id="subscribe-form_email_checkbox" checked>
+            Я согласен с <a href="">условиями оферты.</a>
             </label>
-            <input class="input_button" type="submit" value="Подписаться" class="subscribe-form_submit">
+            <input class="subscribe-form__button" type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-form_submit">
             
             </form>
         </div>
