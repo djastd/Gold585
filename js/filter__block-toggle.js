@@ -6,6 +6,5 @@ $(document).ready(function() {
 
   function filterblocktoggle(){
       $(this).nextAll().slideToggle(500);
-      $(this).children('i').toggleClass('circle_plus').toggleClass('circle_minus');
-      
+      $(this).children('i').toggleClass('circle_plus').toggleClass('circle_minus'); 
   }
