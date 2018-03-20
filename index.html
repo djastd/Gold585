@@ -24,7 +24,8 @@
     <header class="header">
             <div class="header__menu">
                 <a href="">
-                </a></div>
+                </a>
+            </div>
             <div class="header__logotype"><a href=""></a></div>
             <div class="header__icon-phone"><a href="tel:88005555585"></a>
             </div>
@@ -51,9 +52,14 @@
                     </li>
                 </ul>
             </nav>
-            <h1 class="caption">Золотые серьги с бриллиантами</h1>
-            <i class="filter__icon"></i>
+            <h1 class="Name-page-caption">Каталог</h1>
+          <!--  <i class="filter__icon"></i>
+     *** Этот вариант оформления фильтра считаю подходящим для дизайна, чем тот вариант из технического задания
+    Инструкция: что бы посмотреть мой вариант оформления нужно разкомментировать предыдущий тег <i> и закоментировать следующий <div>
+    Так же нужно разкоментировать правила для .filter__icon в css и закоментировать действующие правила -->
+     <div class="filter__icon">Фильтр <i class="icon-plus"></i>
         </div>
+    </div>
         <div id="filter"  class="container container_modal-theme container_disabled">
           
             <div class="filter">
@@ -122,6 +128,7 @@
             </div>
             <button class="filter__button">ПРИМЕНИТЬ ФИЛЬТРЫ</button>
         </div>
+        
         <div class="container catalog">
             <div class="catalog-item catalog-item_1">
                 <div class="catalog-item__sale-icon">30%</div>

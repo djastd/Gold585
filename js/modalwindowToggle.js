@@ -9,7 +9,7 @@ $(document).ready(function() {
   function modalwindowOpen(){
       $('#filter').removeClass('container_disabled');
       $('.header__icon-filter-cross').show();
-      $('#filter').nextAll('.container').hide();
+      $('#filter').next('.container').hide();
       $('.footer').hide();
       
   }
@@ -17,6 +17,6 @@ $(document).ready(function() {
   function modalwindowClose(){
     $('#filter').addClass('container_disabled');
     $('.header__icon-filter-cross').hide();
-    $('#filter').nextAll('.container').show();
-    $('.footer').show();
+    $('#filter').next('.container').show();
+
 }
