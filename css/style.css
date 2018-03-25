@@ -187,6 +187,13 @@ bottom: -4px;
     flex-direction: column;
 }
 
+@media all and (min-width: 1200px) {
+    .main {
+        margin-top: 100px;
+        }
+    
+}
+
 /* Блок контейнер Block container */
 
 .container {
@@ -206,7 +213,7 @@ bottom: -4px;
  flex-wrap: wrap;
  position: absolute;
  width: 100%;
- min-height: 200px;
+ min-height: 300px;
  top: 50px;
  left: 0px;
  right: 0px;

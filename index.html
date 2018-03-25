@@ -4,9 +4,8 @@
         <meta charset="utf-8">
         <title> </title>
         <meta name="keywords" content="">
-        <meta name="description" content="">
+        <meta name="description" content="Адаптивный шаблон для каталога интерента магазина Золотой. Тестовое задние выполнил Джантуганов Тимур">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="" href="" type="image/png">
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/filter__block-toggle.js"></script>
         <script src="js/sorting__block-toggle.js"></script>
@@ -17,6 +16,7 @@
         <script src="js/HideContainerButton.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
         
     </head>
@@ -60,8 +60,8 @@
      <div class="filter__icon">Фильтр <i class="icon-plus"></i>
         </div>
     </div>
-        <div id="filter"  class="container container_modal-theme container_disabled">
-          
+        <form id="filter"  class="container container_modal-theme container_disabled" action="" method="" name="catalog-filter">
+            
             <div class="filter">
                 <h2 class="filter__caption">FILTER
                         <i class="caret_dowm"></i>
@@ -123,11 +123,13 @@
                     <input class="sorting-block__input" type="checkbox" name="sorting-metod-by-price-down" id="sorting-metod-by-price-down">
                     По уменьшению цены
                 </label>
+                <form>
                 </div>
 
             </div>
-            <button class="filter__button">ПРИМЕНИТЬ ФИЛЬТРЫ</button>
-        </div>
+            <input  class="filter__button" value="ПРИМЕНИТЬ ФИЛЬТРЫ" type="submit" >
+        </form>
+       
         
         <div class="container catalog">
             <div class="catalog-item catalog-item_1">
